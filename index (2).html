@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen -  BlackJack NEW</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type = "text/javascript" src = "script.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet"> <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id = "playerWins"></div>
+<div id = "dealerWins"></div>
+
+<div id = "headerID"><p style = "font-size: 2.5em" class = "text-center">Click to play BlackJack!</p>
+</div>
+
+<div class = "grid-container text-center">
+  <div id = "walletPrefix"><p>Your Wallet:</p></div>
+  <div id = "walletValue">
+  </div></div>
+<div class = "wrapper">
+<input class ="bet"  id="betBox" type="number"><div id = "shuffleDiv"><h2>Shuffling deck...</h2></div>
+<input type="button" onclick="bet();" class = "bet" id="betButton" value="Place Bet"/></div><br>
+<div class = "wrapper">
+<button id = "play" class = "btn btn-info" onClick = "play();">Play</button>
+  </div> 
+
+<div class="grid-container">
+  <div class="grid-item" id = "playerCards">Player's Cards</div>
+  <div class="grid-item" id = "dealerCards">Dealer's Cards</div>
+  <div class = "grid-item" id = "yourScore"></div>
+    <div class = "grid-item" id = "theirScore"></div>
+</div> 
+<div class = "row">
+<div id = "playerScoreBox" class ="col-sm-6"></div>
+<div id = "dealerScoreBox" class ="col-sm-6"> </div>
+</div>
+
+<div class = "wrapper text-center">
+<br><br>
+  <button id = "hit" class = "btn btn-primary" onclick="hit()">HIT</button>
+</div>
+<div class = "wrapper text-center" id = "stand">
+  <button class = 
+"btn btn-danger" id = "stand" onclick="stand()">STAND</button>
+</div>
+<div class = "wrapper text-center" id = "again">
+  <button class = 
+"btn btn-danger" onClick ="play();">Bet Again</button>  
+</div>
+<div id = "hitBox"></div>
+
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+<script type = "text/javascript" src = "script.js"></script>
+</html>
